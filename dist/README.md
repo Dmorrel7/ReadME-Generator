@@ -1,6 +1,6 @@
 
   
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
     
   # asd 
 
@@ -20,10 +20,10 @@
   undefined
 
   ## Usage
-  g
+  asd
 
   ## Credits
-  ass
+  asdd
 
   ## License
   This licence is covered under 
@@ -37,6 +37,6 @@
   undefined
 
   ## Questions
-  You can contact to me at my GitHub profile, which is [asd](https://github.com/asd).
-  You can also reach out to me by email. asd
+  You can contact to me at my GitHub profile, which is [asdd](https://github.com/asdd).
+  You can also reach out to me by email. asdd
   
