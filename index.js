@@ -1,6 +1,5 @@
 
 const inquirer = require('inquirer');
-const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -61,6 +60,21 @@ const questionPrompt = () =>
                 }
             }
         },
+
+        {
+            type: 'input',
+            name: 'githubLink',
+            message: 'Please enter your GitHub Profile Link:',
+            validate: gitLinkInput => {
+                if (gitLinkInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub Link!');
+                    return false;
+                }
+            }
+        },
+
         {
             type: 'input',
             name: 'email',
@@ -77,6 +91,13 @@ const questionPrompt = () =>
                     return false;
                 }
             }
+        },
+
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'Did you have any callaborators or outside resources for help? If so list them.',
+            
         },
 
         {
@@ -153,18 +174,18 @@ const questionPrompt = () =>
 
         {
             type: 'confirm',
-            name: 'confirmContributions',
+            name: 'confirmContribution',
             message: 'Will other users be able to contribute to your project?',
             default: true
         },
 
         {
             type: 'input',
-            name: 'contributions',
+            name: 'contribution',
             message: 'Please explain guidelines for contribution:',
-            when: ({confirmContributions}) =>
+            when: ({confirmContribution}) =>
             {
-                if (confirmContributions)
+                if (confirmContribution)
                 {
                     return true;
                 }
@@ -173,44 +194,22 @@ const questionPrompt = () =>
                     return false;
                 }
             }
-        },
+        }
     ])
 };
 
-// // TODO: Create a function to write README file
-const writeFile = fileContent => {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./dist/README.md', fileContent, err => {
-            if (err) {
-                reject(err);
-                return;
-            }
 
-            resolve({
-                ok: true,
-                message: 'File Created!'
-            });
-        });
-    });
-};
-
-// // TODO: Create a function to initialize app
-function init() 
-{
+function init() {
     questionPrompt()
-    .then(data =>
+    .then((answers) => 
     {
-        return generateMarkdown(data);
-    })
-    .then(generatedReadMe =>
-    {
-        return writeFile('README.md', generatedReadMe);
-    })
-    .catch (err =>
-        {
-            console,log(err);
-        })
-};
+        
+        console.log(answers)
 
+        generateMarkdown(answers)
+       
+    })
+
+}
 // // Function call to initialize app
-init();
+init()

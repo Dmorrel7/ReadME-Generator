@@ -1,7 +1,7 @@
 {
-  "name": "potential-enigma",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "An application that allows the use to generate a readME",
+  "description": "An application that allows the user to generate a readME",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
     "generator"
   ],
   "author": "Dalton Morrel",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Dmorrel7/ReadME-Generator/issues"
   },
