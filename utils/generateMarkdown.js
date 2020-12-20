@@ -7,7 +7,7 @@ const renderLicenseBadge = license =>
   if (license.includes('Apache') )
   {
     return `
-      ![Apache](https://img.shields.io/aur/license/android-studio.png)
+    [![Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
     `;
   }
   else if (license.includes('GPL'))
@@ -19,7 +19,7 @@ const renderLicenseBadge = license =>
   else if (license.includes('MIT'))
   {
     return `
-      ![MIT](https://img.shields.io/npm/l/express.png)
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     `;
   }
   else

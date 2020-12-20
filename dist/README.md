@@ -1,6 +1,6 @@
 
   
-      ![Apache](https://img.shields.io/aur/license/android-studio.png)
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
   # asd 
 
@@ -20,14 +20,14 @@
   undefined
 
   ## Usage
-  n
+  sdf
 
   ## Credits
-  d
+  b
 
   ## License
   This licence is covered under 
-      [Apache](https://www.apache.org/licenses/LICENSE-2.0)
+      [MIT](https://www.opensource.org/licenses/mit-license.php)
     .
   
   ## Contributing 
@@ -37,6 +37,6 @@
   undefined
 
   ## Questions
-  You can contact to me at my GitHub profile, which is [asdd](https://github.com/asdd).
+  You can contact to me at my GitHub profile, which is [asd](https://github.com/asd).
   You can also reach out to me by email. asd
   
