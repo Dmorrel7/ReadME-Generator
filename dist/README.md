@@ -1,11 +1,11 @@
 
+  # readme-generator 
   
-    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
+    [![MIT](https://img.shields.io/badge/license-MIT-blue)]
     
-  # asd 
 
   ## Description
-  asd
+  some discription
 
   ## Table of Contents
   * [Installation](#installation)
@@ -17,26 +17,26 @@
   * [Questions](#questions)
   
   ## Installation
-  undefined
+  some instructions
 
   ## Usage
-  asd
+  some usage
 
   ## Credits
-  asdd
+  https://youtu.be/I0dYDRhzi5s
 
   ## License
-  This licence is covered under 
+  This project is covered under the license of 
       [MIT](https://www.opensource.org/licenses/mit-license.php)
     .
   
   ## Contributing 
-  undefined
+  be nice
 
   ## Test
-  undefined
+  some special instructions
 
   ## Questions
-  You can contact to me at my GitHub profile, which is [asdd](https://github.com/asdd).
-  You can also reach out to me by email. asdd
+  You can contact to me at my GitHub profile, which is [Dmorrel7](https://github.com/Dmorrel7).
+  You can also reach out to me by email daltonmorrel7@gmail.com
   

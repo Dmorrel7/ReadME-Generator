@@ -7,19 +7,19 @@ const renderLicenseBadge = license =>
   if (license.includes('Apache') )
   {
     return `
-    [![Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]
     `;
   }
   else if (license.includes('GPL'))
   {
     return `
-      ![GPL](https://img.shields.io/eclipse-marketplace/l/notepad4e.png)
+      [![GPL](https://img.shields.io/eclipse-marketplace/l/notepad4e.png)]
     `;
   }
   else if (license.includes('MIT'))
   {
     return `
-    ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
+    [![MIT](https://img.shields.io/badge/license-MIT-blue)]
     `;
   }
   else
@@ -33,7 +33,7 @@ const renderLicenseLink = license =>
   if (license.includes('Apache'))
   {
     return `
-      [Apache](https://www.apache.org/licenses/LICENSE-2.0)
+    [Apache](https://opensource.org/licenses/Apache-2.0)
     `;
   }
   else if (license.includes('GPL'))
@@ -57,8 +57,8 @@ const renderLicenseLink = license =>
 function generateMarkdown(data) {
  
   let info =  `
-  ${renderLicenseBadge(data.license)}
   # ${data.title} 
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -82,7 +82,7 @@ function generateMarkdown(data) {
   ${data.credits}
 
   ## License
-  This licence is covered under ${renderLicenseLink(data.license)}.
+  This project is covered under the license of ${renderLicenseLink(data.license)}.
   
   ## Contributing 
   ${data.contribution}
@@ -92,7 +92,7 @@ function generateMarkdown(data) {
 
   ## Questions
   You can contact to me at my GitHub profile, which is [${data.github}](https://github.com/${data.github}).
-  You can also reach out to me by email. ${data.email}
+  You can also reach out to me by email ${data.email}
   `;
 
   writeFile('./dist/README.md', info);
