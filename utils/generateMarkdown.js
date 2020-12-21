@@ -1,64 +1,53 @@
 const fs = require('fs');
 
 // If there is no license, return an empty string
-const renderLicenseBadge = license => 
+function renderLicenseBadge(license) {
 
-{
-  if (license.includes('Apache') )
-  {
-    return `
-      ![Apache](https://img.shields.io/aur/license/android-studio.png)
-    `;
-  }
-  else if (license.includes('GPL'))
-  {
-    return `
-      ![GPL](https://img.shields.io/eclipse-marketplace/l/notepad4e.png)
-    `;
-  }
-  else if (license.includes('MIT'))
-  {
-    return `
-      ![MIT](https://img.shields.io/npm/l/express.png)
-    `;
-  }
-  else
-  {
-    return ``;
-  }
-};
+  let licenseBadge 
+  
+    if(license.includes('Apache') ) {
+      licenseBadge = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+    } 
+    else if(license.includes('GPL')) {
+      licenseBadge = `![GPL](https://img.shields.io/eclipse-marketplace/l/notepad4e.png)`
+    } 
+    else if (license.includes('MIT')){
+      licenseBadge = `![MIT](https://img.shields.io/badge/license-MIT-blue)`
+    }
+    else
+    {
+        return ``;
+    }
 
-const renderLicenseLink = license =>
-{
-  if (license.includes('Apache'))
-  {
-    return `
-      [Apache](https://www.apache.org/licenses/LICENSE-2.0)
-    `;
-  }
-  else if (license.includes('GPL'))
-  {
-    return `
-      [GPL](https://www.gnu.org/licenses/gpl-3.0.en.html)
-    `;
-  }
-  else if (license.includes('MIT'))
-  {
-    return `
-      [MIT](https://www.opensource.org/licenses/mit-license.php)
-    `;
-  }
-  else
-  {
-    return ``;
-  }
+  return licenseBadge;
+  
 }
 
+function renderLicenseLink(license) {
+  let licenseLink 
+
+    if(license.includes('Apache')) {
+      licenseLink = `(https://opensource.org/licenses/Apache-2.0)`
+    } 
+    else if (license.includes('GPL')) {
+      licenseLink =  `[GPL](https://www.gnu.org/licenses/gpl-3.0.en.html)`
+    }
+    else if (license.includes('MIT')){
+      licenseLink = `[MIT](https://www.opensource.org/licenses/mit-license.php)`
+    }
+
+    else
+    {
+        return ``;
+    }
+
+    return licenseLink
+}
 function generateMarkdown(data) {
  
   let info =  `
-  ${renderLicenseBadge(data.license)}
   # ${data.title} 
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -82,7 +71,7 @@ function generateMarkdown(data) {
   ${data.credits}
 
   ## License
-  This licence is covered under ${renderLicenseLink(data.license)}.
+  This project is covered under the license of ${renderLicenseLink(data.license)}.
   
   ## Contributing 
   ${data.contribution}
@@ -92,7 +81,7 @@ function generateMarkdown(data) {
 
   ## Questions
   You can contact to me at my GitHub profile, which is [${data.github}](https://github.com/${data.github}).
-  You can also reach out to me by email. ${data.email}
+  You can also reach out to me by email ${data.email}
   `;
 
   writeFile('./dist/README.md', info);

@@ -1,11 +1,9 @@
 
-  
-      ![Apache](https://img.shields.io/aur/license/android-studio.png)
-    
-  # asd 
+  # readme-generator 
+  ![MIT](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description
-  asd
+  Creates a readme.md
 
   ## Table of Contents
   * [Installation](#installation)
@@ -17,26 +15,24 @@
   * [Questions](#questions)
   
   ## Installation
-  undefined
+  Some instructions
 
   ## Usage
-  n
+  Some usage
 
   ## Credits
-  d
+  some help
 
   ## License
-  This licence is covered under 
-      [Apache](https://www.apache.org/licenses/LICENSE-2.0)
-    .
+  This project is covered under the license of [MIT](https://www.opensource.org/licenses/mit-license.php).
   
   ## Contributing 
-  undefined
+  be nice
 
   ## Test
-  undefined
+  some instructions
 
   ## Questions
-  You can contact to me at my GitHub profile, which is [asdd](https://github.com/asdd).
-  You can also reach out to me by email. asd
+  You can contact to me at my GitHub profile, which is [Dmorrel7](https://github.com/Dmorrel7).
+  You can also reach out to me by email daltonmorrel7@gmail.com
   
