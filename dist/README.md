@@ -1,11 +1,9 @@
 
   # readme-generator 
-  
-    [![MIT](https://img.shields.io/badge/license-MIT-blue)]
-    
+  ![MIT](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description
-  some discription
+  Creates a readme.md
 
   ## Table of Contents
   * [Installation](#installation)
@@ -17,24 +15,22 @@
   * [Questions](#questions)
   
   ## Installation
-  some instructions
+  Some instructions
 
   ## Usage
-  some usage
+  Some usage
 
   ## Credits
-  https://youtu.be/I0dYDRhzi5s
+  some help
 
   ## License
-  This project is covered under the license of 
-      [MIT](https://www.opensource.org/licenses/mit-license.php)
-    .
+  This project is covered under the license of [MIT](https://www.opensource.org/licenses/mit-license.php).
   
   ## Contributing 
   be nice
 
   ## Test
-  some special instructions
+  some instructions
 
   ## Questions
   You can contact to me at my GitHub profile, which is [Dmorrel7](https://github.com/Dmorrel7).
