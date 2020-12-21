@@ -202,14 +202,10 @@ const questionPrompt = () =>
 function init() {
     questionPrompt()
     .then((answers) => 
-    {
-        
+    { 
         console.log(answers)
-
         generateMarkdown(answers)
-       
     })
-
 }
 // // Function call to initialize app
 init()
