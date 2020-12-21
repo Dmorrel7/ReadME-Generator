@@ -1,8 +1,6 @@
 # readme-generator 
-  
-    ![MIT](https://img.shields.io/badge/license-MIT-blue)
+   ![MIT](https://img.shields.io/badge/license-MIT-blue)
     
-
   ## Description
   This is a command line apllication that allows the user to generate a README.md
 
