@@ -20,7 +20,6 @@ function renderLicenseBadge(license) {
     }
 
   return licenseBadge;
-  
 }
 
 function renderLicenseLink(license) {
@@ -94,7 +93,6 @@ function writeFile(fileName, data)
   {
       fs.writeFile(fileName, data, err => 
       {
-          
           if (err) 
           {
               reject(err);
